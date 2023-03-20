@@ -1,0 +1,37 @@
+// !TO PERCENT %:
+@function prc($pxOne, $pxTwo) {
+  $result: math.div($pxOne, $pxTwo) * 100%;
+  @return $result;
+}
+
+// !TO REM:
+ @function rem($px) {
+  $result: math.div($px, 16) + rem;
+  @return $result;
+}
+
+// !TO EM:
+@function em($px) {
+  $result: math.div($px, 16) + em;
+  @return $result;
+}
+// !TO vw:
+@function vw($pxOne ) {
+  $result: math.div($pxOne,$maxWidthContainer) * 100 + vw;
+  @return $result;
+}
+
+// !TO md:
+@function md($pxOne ) {
+  $result: math.div($pxOne,$mdWidthContainer) * 100 + vw;
+  @return $result;
+}
+
+// !TO sm:
+@function sm($pxOne ) {
+  $result: math.div($pxOne,$smWidthContainer) * 100 + vw;
+  @return $result;
+}
+
+
+

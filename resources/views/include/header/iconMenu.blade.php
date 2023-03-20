@@ -1,0 +1,6 @@
+<button class="header__burger icon-menu">
+  <span></span> 
+  <span></span> 
+  <span></span> 
+</button>
+

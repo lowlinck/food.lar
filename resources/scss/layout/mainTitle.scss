@@ -1,0 +1,63 @@
+.main {
+
+    // .main_title
+    &_title {
+        position: absolute;
+        width: 817px;
+        height: 210px;
+        left: 312px;
+        top: 221px;
+        font-family: $mainFont;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 86px;
+        line-height: 105px;
+        text-align: center;
+    }
+
+    
+    @media (max-width:1440px) {
+        &_title {
+            position: absolute;
+            width: 513px;
+            height: 78px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 148px;
+            font-size: 32px;
+            line-height: 38.89px;
+
+        }
+        
+    }
+}
+
+
+
+
+
+
+.SecondPartTitle {
+    
+}
+
+.TherdPartTitle {   
+    color: $mainColor;
+}
+
+.forthPartTitle {
+    display: block;
+    width: 272px;
+    height: 11px;
+    margin-left: calc(50% - 272px/2 + 150px);
+    }
+
+    @media (max-width:1440px) {
+        .SecondPartTitle {
+            display: inline;
+        }
+        .TherdPartTitle {
+            display: block;
+            color: $mainColor;
+        }
+    }

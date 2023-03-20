@@ -1,0 +1,527 @@
+// =====================================================================================================================
+
+.header {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  
+  height: 734px;
+  background-color: white
+
+}
+
+.header_container {
+  padding: 0 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+
+  max-width: $maxWidthContainer;
+  margin: 0 auto;
+
+}
+
+.circle {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  color: $mainColor;
+
+
+  // .circle__item1
+
+  &__item1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: rem(-83);
+    margin: 0 auto;
+    width:300px;
+    height: 300px;
+    border: 1px solid $mainColor;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  // .circle__item2
+
+  &__item2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: rem(-183);
+    opacity: 0.8;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    border: 1px solid $mainColor;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  // .circle__item3
+
+  &__item3 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: rem(-283);
+    opacity: 0.6;
+    margin: 0 auto;
+    width: 700px;
+    height: 700px;
+    border: 1px solid $mainColor;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  // .circle__item4
+
+  &__item4 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: rem(-383);
+    opacity: 0.4;
+    margin: 0 auto;
+    width: 900px;
+    height: 900px;
+    border: 1px solid $mainColor;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  // .circle__item5
+
+  &__item5 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: rem(-483);
+    margin: 0 auto;
+    opacity: 0.2;
+    width: 1100px;
+    height: 1100px;
+    border: 1px solid $mainColor;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  @media(max-width: 1440px){
+    &__item1 {
+      top: rem(-114.73);
+      width: vw(300);
+      height: vw(300);
+    }
+
+    &__item2 {
+      top: rem(-191.55);
+      width: vw(500);
+      height: vw(500);
+    }
+    &__item3 {
+      top: rem(-268.36);
+      width: vw(700);
+      height: vw(700);
+    }
+    &__item4 {
+      top: rem(-345.18);
+      width: vw(900);
+      height: vw(900);
+    }
+    &__item5 {
+      top: rem(-422);
+      width: vw(1100);
+      height: vw(1100);
+    }
+
+  }
+
+  @media(max-width: 1040px){
+    &__item1 {
+      top: rem(-114.73);
+      width: md(230);
+      height: md(230);
+    }
+
+    &__item2 {
+      top: rem(-191.55);
+      width: md(384);
+      height: md(384);
+    }
+    &__item3 {
+      top: rem(-268.36);
+      width: md(537);
+      height: md(537);
+    }
+    &__item4 {
+      top: rem(-345.18);
+      width: md(691);
+      height: md(691);
+    }
+    &__item5 {
+      top: rem(-422);
+      width: md(845);
+      height: md(845);
+    }
+
+  }
+
+
+   @media(max-width: 768px){
+    .circle{
+      min-width: 375px;
+    }
+    &__item1 {
+      top: rem(-14.18);
+      width: rem(142.36);
+      height: rem(142.36);
+    }
+
+    &__item2 {
+      top: rem(-61.64);
+      width: rem(237.27);
+      height: rem(237.27);
+    }
+    &__item3 {
+      top: rem(-109.09);
+      width: rem(332.18);
+      height: rem(332.18);
+    }
+    &__item4 {
+      top: rem(-156.55);
+      width: rem(427.09);
+      height: rem(427.09);
+    }
+    &__item5 {
+      top: rem(-204);
+      width: rem(522);
+      height: rem(522);
+    }
+
+  }
+
+  .circle {
+    // .circle__image
+
+    &__image {
+      // .circlea
+      position: relative;
+      width: 100%;
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+
+
+      &_1 {
+        position: absolute;
+        width: rem(125);
+        height: rem(125);
+        left: rem(211);
+        top: rem(82);
+        border-radius:999px;
+        background: url($path+"/images/xl/Ellipse77.png");
+      }
+
+      // .circle__image_2
+
+      &_2 {
+        position: absolute;
+        width: rem(222);
+        height:rem(222);
+        left: rem(1130);
+        top: rem(63);
+        border-radius: 999px;
+        background: url($path+'/images/xl/Ellipse 78.png');
+      }
+
+      // .circle__image_3
+
+      &_3 {
+
+        position: absolute;
+        width: rem(222);
+        height: rem(222);
+        left: rem(-59);
+        top: rem(462);
+        border-radius: 100px;
+        background: url($path+'/images/xl/Ellipse 79.png');
+      }
+
+      // .circle__image_4
+
+      &_4 {
+        position: absolute;
+        width: rem(184);
+        height: rem(184);
+        left: rem(1088);
+        top: rem(339);
+        border-radius: 999px;
+        background: url($path+'/images/xl/Ellipse 80.png');
+      }
+
+      // .circle__image_5
+
+      &_5 {
+        position: absolute;
+        width: rem(222);
+        height: rem(222);
+        left: rem(1283);
+        top: rem(470);
+        border-radius: 1000px;
+
+        background: url($path+'/images/xl/Ellipse 81.png');
+      }
+
+      // .circle__image_6
+
+      &_6 {
+        position: absolute;
+        width: rem(222);
+        height: rem(222);
+        left: rem(-35);
+        top: rem(174);
+        border-radius: 999px;
+        background: url($path+'/images/xl/Ellipse 82.png');
+      }
+
+      // .circle__image_7
+
+      &_7 {
+        position: absolute;
+        width: rem(136);
+        height: rem(136);
+        left: rem(192);
+        top: rem(367);
+        border-radius: 999px;
+        background: url($path+'/images/xl/Ellipse 83.png');
+      }
+
+      // .circle__image_8
+
+      &_8 {
+        position: absolute;
+        width: rem(136);
+        height: rem(136);
+        left: rem(1372);
+        top: rem(249);
+        border-radius: 999px;
+        background: url($path+'/images/xl/Ellipse 84.png');
+      }
+       
+     @media (max-width:1440px){
+      
+      &__image {
+        margin: 0 auto;
+      }
+
+      &_1 {
+        
+        width: rem(72);
+        height: rem(72);
+        left: md(230);
+        top: rem(41);
+        border-radius:999px;
+        background: url($path+'/images/md/Ellipse 77.png');
+      }
+
+      // .circle__image_2
+
+      &_2 {
+        
+        width: rem(115);
+        height:rem(115);
+        left: md(710);
+        top: rem(94);
+        border-radius: 999px;
+        background: url($path+'/images/md/Ellipse 78.png');
+      }
+
+      // .circle__image_3
+
+      &_3 {
+
+        
+        width: rem(128);
+        height: rem(128);
+        left: md(120);
+        top: rem(259);
+        border-radius: 100px;
+        background: url($path+'/images/md/Ellipse 79.png');
+      }
+
+      // .circle__image_4
+
+      &_4 {
+        
+        width: rem(113);
+        height: rem(113);
+        left: md(640);
+        top: rem(243);
+        border-radius: 999px;
+        background: url($path+'/images/md/Ellipse 80.png');
+      }
+
+      // .circle__image_5
+
+      &_5 {
+        
+        width: rem(136);
+        height: rem(136);
+        left: md(720);
+        top: rem(355);
+        border-radius: 1000px;
+
+        background: url($path+'/images/md/Ellipse 81.png');
+      }
+
+      // .circle__image_6
+
+      &_6 {
+        
+        width: rem(127);
+        height: rem(127);
+        left: md(120);
+        top: rem(94);
+        border-radius: 999px;
+        background: url($path+'/images/md/Ellipse 82.png');
+      }
+
+      // .circle__image_7
+
+      &_7 {
+        
+        width: rem(78);
+        height: rem(78);
+        left: md(240);
+        top: rem(205);
+        border-radius: 999px;
+        background: url($path+'/images/md/Ellipse 83.png');
+      }
+
+      // .circle__image_8
+
+      &_8 {
+        
+        width: rem(84);
+        height: rem(84);
+        left: md(790);
+        top: rem(208);
+        border-radius: 999px;
+        background: url($path+'/images/md/Ellipse 84.png');
+      }
+    }
+
+    @media (max-width:768px){
+
+      
+       min-width: 375px;
+      
+      
+      &_1 {
+        
+        width: rem(41);
+        height: rem(41);
+        left: sm(57);
+        top: rem(105);
+        border-radius:999px;
+        background: url($path+'/images/sm/Ellipse 77.png');
+      }
+
+      // .circle__image_2
+
+      &_2 {
+        
+        width: rem(48);
+        height:rem(48);
+        left: sm(305);
+        top: rem(98);
+        border-radius: 999px;
+        background: url($path+'/images/sm/Ellipse 78.png');
+      }
+
+      // .circle__image_3
+
+      &_3 {
+
+        
+        width: rem(73);
+        height: rem(73);
+        left: sm(-22);
+        top: rem(180);
+        border-radius: 100px;
+        background: url($path+'/images/sm/Ellipse 79.png');
+      }
+
+      // .circle__image_4
+
+      &_4 {
+        
+        width: rem(43);
+        height: rem(43);
+        left: sm(310);
+        top: rem(178);
+        border-radius: 999px;
+        background: url($path+'/images/sm/Ellipse 80.png');
+      }
+
+      // .circle__image_5
+
+      &_5 {
+        
+        width: rem(45);
+        height: rem(45);
+        left: sm(320);
+        top: rem(234);
+        border-radius: 1000px;
+
+        background: url($path+'/images/sm/Ellipse 81.png');
+      }
+
+      // .circle__image_6
+
+      &_6 {
+        
+        width: rem(73);
+        height: rem(73);
+        left: sm(-24);
+        top: rem(72);
+        border-radius: 999px;
+        background: url($path+'/images/sm/Ellipse 82.png');
+      }
+
+      // .circle__image_7
+
+      &_7 {
+        
+        width: rem(45);
+        height: rem(45);
+        left: sm(60);
+        top: rem(219);
+        border-radius: 999px;
+        background: url($path+'/images/sm/Ellipse 83.png');
+      }
+
+      // .circle__image_8
+
+      &_8 {
+        
+        width: rem(38);
+        height: rem(38);
+        left: sm(340);
+        top: rem(140);
+        border-radius: 999px;
+        background: url($path+'/images/sm/Ellipse 84.png');
+      }
+    }
+
+    }
+  }
+}
+
+// =====================================================================================================================
+
+// Burgersdgfs
+
+

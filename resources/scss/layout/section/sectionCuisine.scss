@@ -1,0 +1,73 @@
+.sectionCuisine {
+    width: 1440px;
+    margin: 0 auto;
+
+}
+
+.cousine {
+
+    // .cousine__container
+
+    &__container {
+        margin: 0 auto;
+        width: 1220px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+.cuisne {
+
+    // .cuisne_image
+    &_image {
+        position: relative;
+
+
+    }
+}
+
+.cuisine {
+
+    // .cuisine__title
+    &__title {
+        position: absolute;
+        color: $whiteColor;
+        top: 300px;
+        left: 20px;
+        font-family: $mainFont;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width:1440px) {
+    .sectionCuisine {
+        width: 770px;
+            
+    }
+    .cousine__container{
+        width: 760px;
+    }
+    .cuisine__title {
+        top: 160px;
+        left: 20px;
+        font-size: 16px;
+    
+}
+}
+
+@media (max-width:768px) {
+    .sectionCuisine {
+        width: 400px;
+            
+    }
+    .cousine__container{
+        width: 378px;
+    }
+
+    
+    
+}
