@@ -2,7 +2,7 @@
   <div class="link_left">
     <nav class="header__menu menu">
       <ul class="menu__list">
-        <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">{{}}</a></li>
         <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
         <li class="menu__item1"><a href="#" class="menu__link">For Restraunts</a></li>
       </ul>
