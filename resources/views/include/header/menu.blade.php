@@ -2,9 +2,9 @@
   <div class="link_left">
     <nav class="header__menu menu">
       <ul class="menu__list">
-        <li class="menu__item"><a href="#" class="menu__link">{{}}</a></li>
+        <li class="menu__item"><a href="{{$menu->leftMenu->link}}" class="menu__link">{{$menu->leftMenu->title}}</a></li>
         <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
-        <li class="menu__item1"><a href="#" class="menu__link">For Restraunts</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">For Restraunts</a></li>
       </ul>
       @include('include.header.iconMenu')
 
@@ -22,19 +22,13 @@
   <div class=" block_icon "><img class=" link_icon " src="{{asset('images/icon/Frame.png')}}"  alt=""></div>
 
 
-  <div class="link_right">
-    <div class="link__login "><a class="" href="#">Login</a></div>
+  <ul class="link_right">
+    <li class="link__right"><a class="" href="#">Login</a></li>
+    <li class="link__right"><a class="" href="#">Sign up</a></li>
+    <li class="link__right"   ><button data-type="popup-1"  class="" href="#"><img src="{{asset('images/icon/search-ico.png')}}" 
+          alt=""></button></li>
+  </ul>
 
-    <div class="link__singup  "><a class="" href="#">Sign up</a></div>
-
-    <div class="link__search   "   ><button data-type="popup-1"  class="" href="#"><img src="{{asset('images/icon/search-ico.png')}}" 
-          alt=""></button></div>
-  </div>
-
-  <div class="popup _overlay-bg" data-popup="popup-1">
-    <div class="popup__content">
-      <h2 class="popup__title">Всплывающее окно</h2>
-      <p class="popup__text">Содержимое всплывающего окна</p>
-      <button class="button-close">Закрыть окно</button>
-    </div>
+  
+    
 </nav>
