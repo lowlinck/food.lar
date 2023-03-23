@@ -18,15 +18,9 @@
     @foreach($rightMenu as $index => $item)
     @if ($index != 2)
     <li class="link__right"><a class="" href="{{$item->link}}">{{$item->title}}</a></li>
-    @else
-    
+    @else    
     <li class="link__right" ><button data-type="popup-1"  class="" href="{{$item->link}}"><img src="{{asset($item->title)}}" alt=""></button></li>
-    @endif
-    
-    @endforeach
-  
-  </ul>
-
-  
-    
+    @endif    
+    @endforeach  
+  </ul>    
 </nav>

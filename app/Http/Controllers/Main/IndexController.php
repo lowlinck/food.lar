@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Main\LeftMenu;
 use App\Models\Main\RightMenu;
+use App\Models\Main\Neighbourhood;
+use App\Models\Main\Cuisine;
+use App\Models\Main\Numberofdiner;
 
 class IndexController extends Controller
 {
@@ -13,11 +16,14 @@ class IndexController extends Controller
 
       $leftMenu = LeftMenu::all();
 
+      $neighbourhood = Neighbourhood::all();
       $rightMenu = RightMenu::all();
+      $cuisine = Cuisine::all();
+      $diners = Numberofdiner::all();
     
        
 
-    return view('main.index', compare('menu'));
+    return view('main.index', compact('leftMenu','rightMenu','neighbourhood','cuisine','diners'));
 
    }
 }

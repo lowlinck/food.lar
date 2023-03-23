@@ -53,11 +53,41 @@
     }
 
     @media (max-width:1440px) {
+
+        .firstPartTitle{
+            display: inline-block;
+        }
+
         .SecondPartTitle {
             display: inline;
         }
         .TherdPartTitle {
             display: block;
             color: $mainColor;
+        }
+
+        .forthPartTitle {
+            width: 120px;
+            margin-left:200px;
+        }
+    }
+
+    @media(max-width:768px){
+        .firstPartTitle{
+            display: block;
+        }
+
+      
+        .SecondPartTitle {
+            display: inline-block;
+            margin-right: 10px; // добавим отступ между элементами, если нужен
+        }
+        .TherdPartTitle {
+            display: inline-block;
+            color: $mainColor;
+        }
+        .forthPartTitle {
+            width: 120px;
+            margin-left:270px;
         }
     }
