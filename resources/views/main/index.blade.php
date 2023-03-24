@@ -26,4 +26,5 @@
       </div>
     </div>
   </header>
+  @include('include.sections.sectionOne')
 @endsection

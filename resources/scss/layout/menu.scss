@@ -103,10 +103,13 @@
 }
 
 
-.menu__item:active, .menu__item:hover, .menu__item:focus {
+.menu__item a:active, .menu__item a:hover, .menu__item a:focus {
     font-weight: bold;
 }
 
+.link__right a:active,.link__right a:hover, .link__right a:focus{
+    font-weight: bold;
+}
 
 
 .icon-menu {

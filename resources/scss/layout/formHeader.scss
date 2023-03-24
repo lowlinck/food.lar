@@ -96,6 +96,7 @@
         &_header2,
         &_header3,
         &_header4 {
+            margin-right: 0;
             width: 466px;
             height: 70px;
             text-align: center;
@@ -112,6 +113,7 @@
         &_header2,
         &_header3,
         &_header4 {
+            margin-right: 0;
             width: 340px;
             height: 70px;
             text-align: center;
@@ -136,7 +138,7 @@
 }
 
 div.formButton {
-    margin: 0 0 0 155px;
+    margin: 0 70px 0 155px;
 
 
 }
@@ -171,14 +173,11 @@ div.formButton {
         height: rem(420);
         border: none;
         border-radius: 0;
-        margin: 0 auto;
+        margin: 0 auto 70px auto;
+        
         grid-template-columns: repeat(1, minmax(0, 1fr));
         grid-template-rows: repeat(5, minmax(0, 1fr));
-        justify-items: center; 
-       
-        
-
-
+        justify-items: center;        
     }
 
     .formButton {
@@ -188,16 +187,11 @@ div.formButton {
         width: 380px;
         background: linear-gradient(180deg, #ECB02F 0%, #F85353 100%);
         box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
-       
-
-
     }
 
     div.formButton {
         margin: 0 auto;
-
     }
-
     .form_words {
         position: absolute;
         left: 56%;
@@ -210,22 +204,18 @@ div.formButton {
         font-size: 16px;
         line-height: 19px;
         text-align: center;
-
         color: #FFFFFF;
     }
 }
 @media (max-width:768) {
-    div.formButton {
-        position: relative;
+    .formTitle{
+        margin: 0 auto 50px auto;
+    }
+ .formButton {       
         border-radius: 10px;
         height: 60px;
         width: 340px;
         background: linear-gradient(180deg, #ECB02F 0%, #F85353 100%);
         box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
-       
-
-
-    }
-
-
+        }
 }
