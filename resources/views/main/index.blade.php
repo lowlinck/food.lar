@@ -23,6 +23,7 @@
         @include('include.header.menu')
         @include('include.header.mainTitle')
         @include('include.header.formHeader')
+        @include('include.header.popup')
       </div>
     </div>
   </header>

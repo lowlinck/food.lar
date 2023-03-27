@@ -17,13 +17,6 @@
 
 
 
-/* =======================================================================================================================
-* Библиотеки
-* раскомментировать для использования 
-*/
-// @import 'libs/aos';
- //@import 'libs/swiper';
-
 // Подлючение кастомного скрола для всего сайта =======================================================================================================================
 @import 'resources/scss/config/scrollbar';
 
@@ -38,5 +31,8 @@
 @import 'resources/scss/layout/mainTitle';
 @import 'resources/scss/layout/repit/titleBlock';
 @import 'resources/scss/layout/menu';
+@import 'resources/scss/layout/popup';
 @import 'resources/scss/layout/formHeader';
-@import'/node_modules/swiper/swiper';
+@import 'resources/scss/layout/section/sectionOne';
+@import '/node_modules/swiper/swiper-bundle';
+@import '/resources/scss/config/swiper';

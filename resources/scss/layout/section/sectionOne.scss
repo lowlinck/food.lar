@@ -3,7 +3,7 @@
     padding: 0 15px;
     min-height: 740px;
     width: 1470px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     overflow: hidden;
     background-color: $sectionColor;
 }
@@ -27,7 +27,7 @@
 
 &__titleImage {
     position: absolute;
-    width: prc(8, 1440);
+    width: prc(30, 1200);
     height: 68px;
     left: prc(330, 1440);
     top: -19px;
@@ -71,7 +71,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('/images/icon/rightVector.svg');
+    background-image: url($path+'/images/icon/rightVector.svg');
     background-size: 50%;
 
 }
@@ -82,10 +82,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('/images/icon/leftVector.svg');
+    background-image: url($path+'/images/icon/leftVector.svg');
     background-size: 50%;
 
 }
+
 
 .button-next:active,
 .button-prev:active {
@@ -137,18 +138,21 @@
     .button-prev{
         width: 60px;
         height: 40px;
-        top: 38%;        
+        top: 38%; 
+        left: -5px;       
     }
     .button-next{
         width: 60px;
         height: 40px;
-        top: 38%;        
+        top: 38%;   
+        right: -5px;        
     }
 
 .button-next:active,
 .button-prev:active {      
     width: 60px;
     height: 40px;       
+   
 }
 
 }
