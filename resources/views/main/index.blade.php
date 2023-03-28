@@ -28,4 +28,5 @@
     </div>
   </header>
   @include('include.sections.sectionOne')
+  @include('include.sections.sectionTwo')
 @endsection

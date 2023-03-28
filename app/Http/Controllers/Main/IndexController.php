@@ -10,6 +10,7 @@ use App\Models\Main\Neighbourhood;
 use App\Models\Main\Cuisine;
 use App\Models\Main\Numberofdiner;
 use App\Models\Main\SliderOne;
+use App\Models\Main\Location;
 
 class IndexController extends Controller
 {
@@ -22,10 +23,11 @@ class IndexController extends Controller
       $cuisine = Cuisine::all();
       $diners = Numberofdiner::all();
       $sliderone = SliderOne::all();
+      $location = Location::all();
     
        
 
-    return view('main.index', compact('leftMenu','rightMenu','neighbourhood','cuisine','diners','sliderone'));
+    return view('main.index', compact('leftMenu','rightMenu','neighbourhood','cuisine','diners','sliderone','location'));
 
    }
 }
