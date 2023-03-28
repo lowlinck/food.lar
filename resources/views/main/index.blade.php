@@ -29,7 +29,7 @@
   </header>
   @include('include.sections.sectionOne')
   @include('include.sections.sectionTwo')
-  @include('include.sections.sectionTwo')
+  @include('include.sections.sectionCuisine')
   @include('include.sections.sectionBlog')
   @include('include.sections.sectionSearch')
   @include('include.footer.footer')
