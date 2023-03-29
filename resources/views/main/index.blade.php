@@ -17,9 +17,7 @@
         <div class="circle__image_6"></div>
         <div class="circle__image_7"></div>
         <div class="circle__image_8"></div>
-        </div>  
-        
-        
+        </div>        
         @include('include.header.menu')
         @include('include.header.mainTitle')
         @include('include.header.formHeader')

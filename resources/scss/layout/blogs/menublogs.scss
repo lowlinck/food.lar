@@ -1,0 +1,27 @@
+.menu {
+    margin: 0 auto;
+
+}
+
+.undermenu {
+    display: flex;
+    gap: 20px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #231C1A;
+    opacity: 0.5;
+    border-bottom: 1px solid rgba(35, 28, 26, 0.5);
+    padding-bottom: 5px;
+   
+}
+
+.small__border:hover,
+.small__border:focus,
+.small__border:active
+{
+    border-bottom: 4px solid rgba(236, 176, 47, 1);;
+    padding-bottom: 5px;
+}

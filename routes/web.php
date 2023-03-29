@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,5 +18,5 @@ Route::group(['namespace'=> 'Main'], function () {
     Route::get('/', 'IndexController');
 });
 Auth::routes();
-
+Route::resource('blogs', App\Http\Controllers\Blog\BlogController::class);
 

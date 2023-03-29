@@ -9,6 +9,7 @@
     grid-template-rows: repeat(1, minmax(0, 1fr));
     justify-items: center;
     width: prc(1180, 1550);
+    max-width: 1180px;
     height: rem(70);
     border-radius: 71px;
     box-shadow: $menuBoxShadow;

@@ -11,11 +11,11 @@ $('.link__right:nth-child(3)').magnificPopup({
       maxWidth: 561,
       maxHeight: 125,
       closeOnContentClick: false,
-      closeOnBgClick: false,   
+      closeOnBgClick: true,   
   });
 
-$(document).on('click', function(e) {
-  if (!$(e.target).closest('#search-form').length) {
-    $.magnificPopup.close();
-  }
-});
+// $(document).on('click', function(e) {
+//   if (!$(e.target).closest('#search-form').length) {
+//     $.magnificPopup.close();
+//   }
+// });

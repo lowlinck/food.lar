@@ -1,6 +1,6 @@
 // =====================================================================================================================
 
-.header {
+header.header {
   max-width: $maxWidth;
   margin: 0 auto;
   
@@ -10,6 +10,7 @@
 }
 
 .header_container {
+  max-width: 1440px;
   padding: 0 15px;
   height: 100%;
   display: flex;
@@ -20,6 +21,9 @@
   max-width: $maxWidthContainer;
   margin: 0 auto;
 
+}
+.headermen{
+  width: 1440px;
 }
 
 .circle {

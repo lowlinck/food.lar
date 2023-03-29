@@ -1,0 +1,28 @@
+.breadcreambs {
+    display: flex;
+    margin: 140px 0 0 130px;
+
+}
+
+.mainparts {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+
+}
+
+.imageparts {
+  margin: 2px 5px 0 5px;
+}
+
+.secondparts {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+    opacity: 0.4;
+}
