@@ -1,28 +1,25 @@
-<div class="blog__main cart">
-    @foreach($blogs as $blog)
-    <div class="blog__cart">
-        <div class="blog_left">
-            <div class="blog__picture">
-                <picture>
-                    <source media="(max-width: 1440px)" srcset="{{$blog->imageMd}}">
-                    <source media="(max-width: 768px)" srcset="{{$blog->imageSd}}">
-                    <img src="{{$blog->imageXl}}" alt="An image">
-                  </picture>    
+@foreach ($blogs as $blog)
+    <div class="cart__blog">
+        <div class="cart__image">
+            <div class="">
+               <img class="picture__image" src="{{ $blog->base64Image}}" alt="An image">
             </div>
         </div>
-     
-        <div class="blog__right">
-            <div class="blog__title">{{$blog->title}}</div>
-            <div class="blog__text">{{$blog->text}}
+
+        <div class="cart__content">
+            <div class="cart__by">by:<span class="cart__author"> Aaron</span></div>
+            <div class="cart__category">FoodieGo BCtravel</div>
+            <div class="cart__title">{{ $blog->title }}</div>
+            <div class="cart__text">{{Illuminate\Support\Str::limit($blog->text, $limit = 250 , $end ='...') }}
             </div>
             <div class="blog__button">
                 <a href="#">read more </a>
-                    <img src="images/icon/rightVector.svg" alt="" >
-               
+                <img src="images/icon/rightVector.svg" alt="">
+
             </div>
         </div>
-       
     </div>
-    @endforeach
-  
-</div>
+@endforeach
+
+{{-- {{ $paginator->links(['prev_text' => 'Previous', 'next_text' => 'Next']) }} --}}
+

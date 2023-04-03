@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,8 +17,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group(['namespace'=> 'Main'], function () {
-    Route::get('/', 'IndexController');
+    Route::get('/', 'IndexController')->name('main.index');
 });
-Auth::routes();
-Route::resource('blogs', App\Http\Controllers\Blog\BlogController::class);
 
+// Route::group(['namespace'=> 'Blog'], function () {
+//     Route::get('/blogs', 'BlogController@index')->name('blog.index');
+//  });
+ Route::match(['get','post'],'/blogs', 'App\Http\Controllers\Blog\BlogController@index')->name('blogs.index');
+
+
+
+
+Auth::routes();

@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('content')
-<header class="header">
+<header class="header mainheader">
     <div class="header_container">
       <div class="circle">       
         <div  class="circle__item1"></div>      

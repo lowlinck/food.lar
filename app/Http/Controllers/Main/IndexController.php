@@ -28,10 +28,10 @@ class IndexController extends Controller
       $sliderone = SliderOne::all();
       $location = Location::all();
       $cuisinepart = CuisinePart::all();
-      $blogs = Blog::all();
+      $blogs = Blog::paginate(4);
       $searches = SearchPart::all();
-    
-       
+
+
 
     return view('main.index', compact('leftMenu','rightMenu','neighbourhood','cuisine','diners','sliderone','location','cuisinepart','blogs','searches'));
 

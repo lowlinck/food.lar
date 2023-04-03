@@ -25,6 +25,7 @@
 
 // БЕМ блоки используемые во всё проекте =======================================================================================================================
 @import 'resources/scss/config/common';
+
 // @import '../../node_modules/swiper/swiper-bundle';
 // Подключение стилей отдельных блоков и секций =======================================================================================================================
 @import 'resources/scss/layout/header';
@@ -44,3 +45,5 @@
 @import 'resources/scss/layout/repit/breadcrumbs';
 @import 'resources/scss/layout/blogs/menublogs';
 @import 'resources/scss/layout/blogs/cart';
+@import 'resources/scss/layout/blogs/blocklinck';
+@import 'resources/scss/layout/pagination';

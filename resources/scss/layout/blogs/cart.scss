@@ -1,3 +1,129 @@
-.cart{
- margin-top: 23px;
+.cart {
+    margin: 0 auto;
+    margin-top: 23px;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+
+
+
+
+    // .cart__blog
+
+    &__blog {
+
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        width: 600px;
+        margin: 23px auto 0 auto;
+
+
+    }
+
+    // .cart__image
+
+    &__image {}
+
+    // .cart__content
+
+    &__content {
+        width: 904px;
+        background-color: #F4F3EE;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+
+
+
+
+    }
+
+    // .cart__author
+    &__by {
+        margin: 25px 10px 15px 30px;
+        display: inline-block;
+        font-family: $mainFont;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+
+        color: #918D8C;
+
+    }
+
+    &__author {
+
+        font-family: $mainFont;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 17px;
+        color: #231C1A;
+
+
+    }
+
+    // .cart__category
+
+    &__category {
+        display: inline;
+        height: 27px;
+        background: #ECB02F;
+        border-radius: 11px;
+        padding: 10px;
+
+    }
+
+    // .cart__title
+
+    &__title {
+        margin: 0 10px 15px 30px;
+        font-family: $mainFont;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #231C1A;
+    }
+
+    // .cart__text
+
+    &__text {
+        margin: 0 10px 15px 30px;
+        font-family: $mainFont;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $blackColor;
+
+
+    }
+}
+
+.picture__image {
+    border-radius: 20px;
+}
+
+.blog {
+    display: flex;
+
+
+
+    // .blog__button
+
+    &__button {
+        margin: 5px 50px 0 600px;
+        display: flex;
+        justify-content: space-around;
+
+
+    }
+    &__text{
+
+    }
 }

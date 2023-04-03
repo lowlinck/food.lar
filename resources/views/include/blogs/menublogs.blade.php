@@ -1,12 +1,8 @@
 <div class="menu">
     <ul class="undermenu">
-        <li><a class="small__border" href="#">FoodieGo BCtravel</a></li>
-        <li><a class="small__border" href="#">FoodieGo BCtravel</a></li>
-        <li><a class="small__border" href="#">FoodieGo BCtravel</a></li>
-        <li><a class="small__border" href="#">FoodieGo BCtravel</a></li>
-        <li><a class="small__border" href="#">FoodieGo BCtravel</a></li>
-        <li><a class="small__border" href="#">FoodieGo BCtravel</a></li>
-        <li><a class="small__border" href="#">FoodieGo BCtravel</a></li>
-        <li><a class="small__border" href="#">FoodieGo BCtravel</a></li>
+        @foreach ($undermenus as $menu)
+        <li><a class="small__border" href="{{$menu->link}}">{{$menu->name}}</a></li>
+        @endforeach
+        
     </ul>
 </div>

@@ -1,0 +1,60 @@
+.block {
+
+
+    &__link {
+        margin: 50px auto 72px auto;
+        width: 1180px;
+        height: 103px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(.jpg);
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background: url($path+'/images/blog/istockphoto-1189702425-2048x2048.jpg');
+
+
+    }
+
+    // .block__title
+
+    &__title {
+        font-family: $mainFont;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+
+        color: #FFFFFF;
+    }
+
+    &__button {}
+}
+
+.block__button {
+    width: 239px;
+    height: 58px;
+    background: #FFFFFF;
+    border-radius: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.button {
+
+    &__name {
+        font-family: $mainFont;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 100%;
+    }
+
+    // .button__name
+
+    &__image {}
+
+}

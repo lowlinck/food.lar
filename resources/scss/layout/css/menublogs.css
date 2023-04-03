@@ -1,0 +1,34 @@
+.menu {
+  margin: 0 auto;
+}
+
+.undermenu {
+  display: flex;
+  gap: 36px;
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #231C1A;
+  border-bottom: 1px solid rgba(35, 28, 26, 0.5);
+  padding-bottom: 5px;
+}
+
+.small__border {
+  opacity: 0.5;
+}
+
+.small__border:hover,
+.small__border:focus,
+.small__border:active {
+  opacity: 1;
+  border-bottom: 4px solid rgb(236, 176, 47);
+  padding-bottom: 5px;
+}
+
+.undermenu li .small__border:hover,
+.undermenu li .small__border:active,
+.undermenu li .small__border:focus {
+  opacity: 1;
+}/*# sourceMappingURL=menublogs.css.map */

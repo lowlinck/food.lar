@@ -2,8 +2,9 @@
   <div class="link_left">
     <nav class="header__menu menu">
       <ul class="menu__list">
+       
           @foreach($leftMenu as $item)         
-        <li class="menu__item"><a href="{{route('blogs.index')}}" class="menu__link">{{$item->title}}</a></li>
+        <li class="menu__item"><a href="{{route($item->link)}}" class="menu__link">{{$item->title}}</a></li>
         @endforeach       
       </ul>
       @include('include.header.iconMenu')
