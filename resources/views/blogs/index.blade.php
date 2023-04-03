@@ -13,9 +13,10 @@
          @include('include.blogs.blocklinck')
          <div class="pagination__wraper">
             {{ $blogs->links() }}
+        
          </div>
-
+         
     </div>
 </header>
-
+@include('include.footer.footer')
 @endsection

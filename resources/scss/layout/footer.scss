@@ -1,13 +1,17 @@
 .footer {
-    width: 1440px;
+    width: $maxWidth;
     margin: 0 auto;
     background-color: $mainColor;
     height: 634px;
   
 
     &__container {
-        width: 1440px;
+        width: 1477px;
         margin: 0 auto;
+    }
+    .block__empty{
+      width: 1465px;
+    margin-left: -12px;
     }
 
     &_social {

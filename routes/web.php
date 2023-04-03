@@ -24,7 +24,7 @@ Route::group(['namespace'=> 'Main'], function () {
 //     Route::get('/blogs', 'BlogController@index')->name('blog.index');
 //  });
  Route::match(['get','post'],'/blogs', 'App\Http\Controllers\Blog\BlogController@index')->name('blogs.index');
-
+Route::resource('/artical', 'App\Http\Controller\Blog\ArticalController');
 
 
 
