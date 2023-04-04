@@ -33,10 +33,7 @@ class BlogController extends Controller
         $undermenus = Undermenu::all();
         foreach ($blogs as $blog) {
             $blog->base64Image = $this->resizeAndEncodeImage($blog->imageMd, $request->input('screenWidth'));
-        }
-        // print_r('<pre>');
-        // var_dump($request->header);
-        // print_r('</pre>');
+        }       
      return view('blogs.index', compact('leftMenu','rightMenu','blogs','undermenus','request'));
     }
 

@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Blog;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Model\Blog\Artical;
+use App\Models\Blog\Artical;
+use App\Models\Main\LeftMenu;
+use App\Models\Main\RightMenu;
 
 class ArticalController extends Controller
 {
@@ -13,10 +15,9 @@ class ArticalController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public function index()
     {
-        $articals = Artical::find(1);
-        return view('blogs.artical', compact('articals'));
+      
     }
 
     /**
@@ -48,7 +49,10 @@ class ArticalController extends Controller
      */
     public function show($id)
     {
-        //
+        $leftMenu = LeftMenu::all();
+        $rightMenu = RightMenu::all();
+        $articals = Artical::find(1);
+        return view('blogs.articals.artical', compact('articals','leftMenu','rightMenu'));
     }
 
     /**

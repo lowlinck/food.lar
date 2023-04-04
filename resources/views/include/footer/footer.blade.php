@@ -4,9 +4,9 @@
     <div class="first__row">
       <div class="footer__icon">        
         <picture>
-          <source media="(max-width: 1440px)" srcset="images/md/footer/footerLogo.png">
-          <source media="(max-width: 768px)" srcset="images/sm/footer/footerLogo.png">
-          <img src="images/xl/footer/footerLogo.png" alt="An image">
+          <source media="(max-width: 1440px)" srcset="{{asset('images/md/footer/footerLogo.png')}}">
+          <source media="(max-width: 768px)" srcset="{{asset('images/sm/footer/footerLogo.png')}}">
+          <img src="{{asset('images/xl/footer/footerLogo.png')}}" alt="An image">
         </picture>        
       </div>
       <div class="footer__menu">
@@ -82,11 +82,11 @@
       </div>
       
       <div class="footer_social">
-        <img src="images/icon/social/Instagram.png" alt="">
-        <img src="images/icon/social/Twitter.png" alt="">
-        <img src="images/icon/social/WhatsApp.png" alt="">
-        <img src="images/icon/social/Youtube.png" alt="">
-        <img src="images/icon/social/facebook.png" alt="">
+        <img src="{{asset('images/icon/social/Instagram.png')}}" alt="">
+        <img src="{{asset('images/icon/social/Twitter.png')}}" alt="">
+        <img src="{{asset('images/icon/social/WhatsApp.png')}}" alt="">
+        <img src="{{asset('images/icon/social/Youtube.png')}}" alt="">
+        <img src="{{asset('images/icon/social/facebook.png')}}" alt="">
       </div>
     </div>
   </div>

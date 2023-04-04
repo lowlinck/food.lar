@@ -13,7 +13,7 @@
             <div class="cart__text">{{Illuminate\Support\Str::limit($blog->text, $limit = 250 , $end ='...') }}
             </div>
             <div class="blog__button">
-                <a href="#">read more </a>
+                <a href="{{route('artical.show',$blog->id)}}">read more </a>
                 <img src="images/icon/rightVector.svg" alt="">
 
             </div>
