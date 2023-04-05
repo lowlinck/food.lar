@@ -28,7 +28,7 @@ class IndexController extends Controller
       $sliderone = SliderOne::all();
       $location = Location::all();
       $cuisinepart = CuisinePart::all();
-      $blogs = Blog::paginate(6);
+      $blogs = Blog::paginate(4);
       $searches = SearchPart::all();
 
 
