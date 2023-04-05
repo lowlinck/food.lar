@@ -54,7 +54,16 @@ class ArticalController extends Controller
         $articals = Artical::find(1);
         $created_at = $articals->created_at;
         $data = $created_at->format('d.m.Y');
-
+        $firstPart = substr($articals->artical, 0, 1055);
+        $flex_First = substr($articals->artical, 1056, 2195);
+        $flex_therdPart = substr($articals->artical, 2195, 3818);
+        $fourPart = substr($articals->artical, 3818, 4944);
+        $lastPart = substr($articals->artical, 4944, 5621);
+        $articals->firstPart=$firstPart;
+        $articals->flex_First=$flex_First;
+        $articals->flex_therdPart=$flex_therdPart;
+        $articals->fourPart=$fourPart;
+        $articals->lastPart=$lastPart;
         return view('blogs.articals.artical', compact('articals','leftMenu','rightMenu','data'));
     }
 
