@@ -52,7 +52,10 @@ class ArticalController extends Controller
         $leftMenu = LeftMenu::all();
         $rightMenu = RightMenu::all();
         $articals = Artical::find(1);
-        return view('blogs.articals.artical', compact('articals','leftMenu','rightMenu'));
+        $created_at = $articals->created_at;
+        $data = $created_at->format('d.m.Y');
+
+        return view('blogs.articals.artical', compact('articals','leftMenu','rightMenu','data'));
     }
 
     /**

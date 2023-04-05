@@ -16,13 +16,13 @@
             <div class="writer__social">
                 <ul>
                     <li><a href=""><img src="{{asset('images/icon/colorSocial/Instagram.png')}}" alt="" srcset=""></a></li>
-                    <li><a href=""><img src="{{asset('images/icon/colorSocial/')}}" alt="" srcset=""></a></li>
-                    <li><a href=""><img src="{{asset('images/icon/colorSocial/Instagram.png')}}" alt="" srcset=""></a></li>
-                    <li><a href=""><img src="{{asset('images/icon/colorSocial/Instagram.png')}}" alt="" srcset=""></a></li>
+                    <li><a href=""><img src="{{asset('images/icon/colorSocial/Tik Tok.png')}}" alt="" srcset=""></a></li>
+                    <li><a href=""><img src="{{asset('images/icon/colorSocial/Twitter.png')}}" alt="" srcset=""></a></li>
+                    <li><a href=""><img src="{{asset('images/icon/colorSocial/Youtube.png')}}" alt="" srcset=""></a></li>
                     
                 </ul>
             </div>
-            .
+            <div class="writer__data">{{$data}}</div>
        </div>
 
         

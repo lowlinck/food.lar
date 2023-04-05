@@ -1,6 +1,39 @@
 .article__title{
-    margin: 0 0 0 0 ;
+    margin: 0 0 -40px 0 ;
     span{
         display: none;
     }
+}
+.writer {
+    display: flex;
+    align-items: center;
+    margin-left: 130px;
+
+}
+.writer__artical {
+
+}
+.writer__social ul{
+   
+    display: flex;
+    gap:15px;
+    align-items: center;
+    margin: 0 15px 0 15px;
+}
+.writer__data{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5px 10px;
+gap: 10px;
+
+width: 116px;
+height: 27px;
+
+/* Isabelline */
+
+background: #F4F3EE;
+border-radius: 11px;
+
+
 }
