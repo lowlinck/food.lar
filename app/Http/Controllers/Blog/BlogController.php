@@ -23,10 +23,7 @@ class BlogController extends Controller
      */
     public function index(Request $request)
 
-    {
-
-
-        // var_dump($screenWidth);
+    {       
         $leftMenu = LeftMenu::all();
         $rightMenu = RightMenu::all();
         $blogs = Blog::paginate(6);

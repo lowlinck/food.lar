@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Blog;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Blog\BlogController;
 use Illuminate\Http\Request;
 use App\Models\Blog\Artical;
 use App\Models\Main\LeftMenu;
@@ -10,11 +11,19 @@ use App\Models\Main\RightMenu;
 
 class ArticalController extends Controller
 {
+
+    protected $blogController;
+
+    public function __construct(BlogController $blogController)
+    {
+        $this->blogController = $blogController;
+    }
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
       
@@ -64,6 +73,10 @@ class ArticalController extends Controller
         $articals->flex_therdPart=$flex_therdPart;
         $articals->fourPart=$fourPart;
         $articals->lastPart=$lastPart;
+        $articals->resizeimg1= $this->resizeAndEncodeImage(articals->image1,$request);
+        $articals->resizeimg2= $this->resizeAndEncodeImage(articals->image2,$request);
+        $articals->resizeimg3= $this->resizeAndEncodeImage(articals->image3,$request);
+        
         return view('blogs.articals.artical', compact('articals','leftMenu','rightMenu','data'));
     }
 
@@ -100,4 +113,52 @@ class ArticalController extends Controller
     {
         //
     }
+
+    public function resizeAndEncodeImage($imagePath,$request) {
+        $screenWidth = $request->session()->get('screenWidth', null);
+        $screen = intval(preg_replace('/[^0-9]/', "", $screenWidth));
+
+        $image = Image::make($imagePath);
+
+        if (isset($article->image1)) {
+            if ($screenWidth < 768) {
+                $imageSize = ['width' => 341, 'height' => 230];
+            } elseif ($screenWidth < 1440) {
+                $imageSize = ['width' => 700, 'height' => 291];
+            } else {
+                $imageSize = ['width' => 1180, 'height' => 490];
+            }
+        } elseif (isset($article->image2)) {
+            if ($screenWidth < 768) {
+                $imageSize = ['width' => 339, 'height' => 319];
+            } elseif ($screenWidth < 1440) {
+                $imageSize = ['width' => 313, 'height' => 525];
+            } else {
+                $imageSize = ['width' => 380, 'height' => 452];
+            }
+        } elseif (isset($article->image3)) {
+            if ($screenWidth < 768) {
+                $imageSize = ['width' => 340, 'height' => 337];
+            } elseif ($screenWidth < 1440) {
+                $imageSize = ['width' => 579, 'height' => 575];
+            } else {
+                $imageSize = ['width' => 579, 'height' => 575];
+            }
+        } else {
+            // ни одно из трех свойств не установлено
+        }
+
+        
+
+        $image->resize($imageSize['width'], $imageSize['height']);
+
+        return $image->encode('data-url')->encoded;
+    }
+
+    // public function resizes(Request $request){
+
+    //     $screenWidth = $request->input('screenWidth');
+    //     session(['screenWidth' => $screenWidth]);
+
+    // }
 }
