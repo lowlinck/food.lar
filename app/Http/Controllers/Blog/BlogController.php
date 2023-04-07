@@ -24,16 +24,16 @@ class BlogController extends Controller
     public function index(Request $request)
 
     {
-        \Debugbar::info($request);
 
+
+        // var_dump($screenWidth);
         $leftMenu = LeftMenu::all();
         $rightMenu = RightMenu::all();
         $blogs = Blog::paginate(6);
-
         $undermenus = Undermenu::all();
         foreach ($blogs as $blog) {
-            $blog->base64Image = $this->resizeAndEncodeImage($blog->imageMd, $request->input('screenWidth'));
-        }       
+            $blog->base64Image = $this->resizeAndEncodeImage($blog->imageMd,$request);
+        }
      return view('blogs.index', compact('leftMenu','rightMenu','blogs','undermenus','request'));
     }
 
@@ -103,9 +103,12 @@ class BlogController extends Controller
         //
     }
 
-    public function resizeAndEncodeImage($imagePath, $screenWidth) {
+    public function resizeAndEncodeImage($imagePath,$request) {
+        $screenWidth = $request->session()->get('screenWidth', null);
+        $screen = intval(preg_replace('/[^0-9]/', "", $screenWidth));
 
         $image = Image::make($imagePath);
+
 
         if ($screenWidth < 768) {
             $imageSize = ['width' => 320, 'height' => 240];
@@ -120,5 +123,11 @@ class BlogController extends Controller
         return $image->encode('data-url')->encoded;
     }
 
+    public function resizes(Request $request){
+
+        $screenWidth = $request->input('screenWidth');
+        session(['screenWidth' => $screenWidth]);
+
+    }
 
 }

@@ -23,7 +23,9 @@ Route::group(['namespace'=> 'Main'], function () {
 // Route::group(['namespace'=> 'Blog'], function () {
 //     Route::get('/blogs', 'BlogController@index')->name('blog.index');
 //  });
- Route::match(['get','post'],'/blogs', 'App\Http\Controllers\Blog\BlogController@index')->name('blogs.index');
+ Route::get('/blogs', 'App\Http\Controllers\Blog\BlogController@index')->name('blogs.index');
+
+ Route::post('/resize', 'App\Http\Controllers\Blog\BlogController@resizes')->name('blogs.resize');
     Route::resource('/artical', 'Blog\ArticalController');
 
 
