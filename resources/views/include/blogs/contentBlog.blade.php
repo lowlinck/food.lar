@@ -1,6 +1,6 @@
 <div class="artical__container">
     <div class="artical__image">
-        <img src="{{asset('images/artical/ArticalMainImage.png')}}" alt="" srcset="">
+        <img src="{{$articals->resizeimg1}}" alt="" srcset="">
     </div>
     <div class="artical__firstPart">
             {{$articals->firstPart}}

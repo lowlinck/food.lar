@@ -7,6 +7,7 @@ use App\Http\Controllers\Blog\BlogController;
 use Illuminate\Http\Request;
 use App\Models\Blog\Artical;
 use App\Models\Main\LeftMenu;
+use Intervention\Image\Facades\Image;
 use App\Models\Main\RightMenu;
 
 class ArticalController extends Controller
@@ -56,7 +57,7 @@ class ArticalController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Request $request, $id)
     {
         $leftMenu = LeftMenu::all();
         $rightMenu = RightMenu::all();
@@ -73,9 +74,9 @@ class ArticalController extends Controller
         $articals->flex_therdPart=$flex_therdPart;
         $articals->fourPart=$fourPart;
         $articals->lastPart=$lastPart;
-        $articals->resizeimg1= $this->resizeAndEncodeImage(articals->image1,$request);
-        $articals->resizeimg2= $this->resizeAndEncodeImage(articals->image2,$request);
-        $articals->resizeimg3= $this->resizeAndEncodeImage(articals->image3,$request);
+        $articals->resizeimg1= $this->resizeAndEncodeImage($articals->image1,$request,$articals);
+        $articals->resizeimg2= $this->resizeAndEncodeImage($articals->image2,$request,$articals);
+        $articals->resizeimg3= $this->resizeAndEncodeImage($articals->image3,$request,$articals);
         
         return view('blogs.articals.artical', compact('articals','leftMenu','rightMenu','data'));
     }
@@ -114,12 +115,12 @@ class ArticalController extends Controller
         //
     }
 
-    public function resizeAndEncodeImage($imagePath,$request) {
-        $screenWidth = $request->session()->get('screenWidth', null);
-        $screen = intval(preg_replace('/[^0-9]/', "", $screenWidth));
-
+    public function resizeAndEncodeImage($imagePath,$request) {      
+       
+        $screenWidth = $request->session()->get('screenWidth');
+        $screenWidth = intval(preg_replace('/[^0-9]/', "", $screenWidth));        
         $image = Image::make($imagePath);
-
+      
         if (isset($article->image1)) {
             if ($screenWidth < 768) {
                 $imageSize = ['width' => 341, 'height' => 230];
@@ -145,20 +146,20 @@ class ArticalController extends Controller
                 $imageSize = ['width' => 579, 'height' => 575];
             }
         } else {
-            // ни одно из трех свойств не установлено
+            $imageSize = ['width' => 57, 'height' => 57];
         }
 
         
-
+      
         $image->resize($imageSize['width'], $imageSize['height']);
 
         return $image->encode('data-url')->encoded;
     }
 
-    // public function resizes(Request $request){
+    public function resizes(Request $request){
 
-    //     $screenWidth = $request->input('screenWidth');
-    //     session(['screenWidth' => $screenWidth]);
+        $screenWidth = $request->input('screenWidth');
+        session(['screenWidth' => $screenWidth]);
 
-    // }
+    }
 }

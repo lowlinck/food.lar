@@ -103,7 +103,7 @@ class BlogController extends Controller
     public function resizeAndEncodeImage($imagePath,$request) {
         $screenWidth = $request->session()->get('screenWidth', null);
         $screen = intval(preg_replace('/[^0-9]/', "", $screenWidth));
-
+        var_dump($screen);
         $image = Image::make($imagePath);
 
 
@@ -114,7 +114,7 @@ class BlogController extends Controller
         } else {
             $imageSize = ['width' => 340, 'height' => 240];
         }
-
+        var_dump($imageSize);
         $image->resize($imageSize['width'], $imageSize['height']);
 
         return $image->encode('data-url')->encoded;
