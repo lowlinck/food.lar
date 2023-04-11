@@ -26,9 +26,11 @@ Route::group(['namespace'=> 'Main'], function () {
  Route::get('/blogs', 'App\Http\Controllers\Blog\BlogController@index')->name('blogs.index');
 
  Route::post('/resizes', 'Blog\BlogController@resizes')->name('blogs.resizes');
- 
+
     Route::resource('/artical', 'Blog\ArticalController');
     Route::post('/resize', 'Blog\ArticalController@resizes')->name('article.resize');
-
+    Route::get('/video', function () {
+        return view('video');
+    });
 
 Auth::routes();

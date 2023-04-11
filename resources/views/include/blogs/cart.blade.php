@@ -14,7 +14,7 @@
             </div>
             <div class="blog__button">
                 <a href="{{route('artical.show',$blog->id)}}">read more </a>
-                <img src="images/icon/rightVector.svg" alt="">
+                <img src="{{asset('images/icon/rightVector.svg')}}" alt="">
 
             </div>
         </div>
