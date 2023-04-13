@@ -32,10 +32,11 @@
     &__picture {
         margin: 18px 10px 34px 19px;
     }
+    &__text{}
 
     // .blog__title
 
-    &__title {
+    &__title_main {
         margin-top: 28px;
         margin-bottom: 10px;
         font-family: $mainFont;
@@ -47,7 +48,8 @@
 
     // .blog__text
 
-    &__text {
+    &__text_main {
+       
         font-family: $mainFont;
         font-style: normal;
         font-weight: 400;
@@ -59,7 +61,7 @@
 
     // .blog__button
 
-    &__button {
+    &__button_main {
         width: 200px;
         height: 45px;
         display: flex;
@@ -70,6 +72,10 @@
         border: 1px solid #000000;
         border-radius: 40px;
        
+    }
+    &__right{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -137,7 +143,7 @@
         
     &__right{}
 
-    &__title {
+    &__title_main {
         margin-top: 0px;
         margin-bottom: 10px;
        

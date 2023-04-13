@@ -7,7 +7,9 @@
         display: block;
         margin: 0 auto;
     }
-
+    @media (max-width:1440px) {
+       
+    }
     // .artical__image
 
     &__image {
@@ -71,18 +73,21 @@
 
     &__video {
         margin: 40px auto 40px auto;
-        width: 1180px;
-        height: 600px;
-
+        width: vw(1180);
+       
         border-radius: 20px;
+        text-align: center;
     }
-        @media (max-width:1440) {
-            &__video {
-                width: 699px;
-                height: 356px;
-            }
-        }
-
+       iframe{
+        width: vw(1180);
+       }
+    // @media (max-width:1440px) {
+    //     .artical__video {
+    //         text-align: center;
+    //         width: 699px;
+    //         height: 356px;
+    //     }
+    // }
 
 
     // .artical__fourPart

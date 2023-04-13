@@ -10,7 +10,7 @@
             <div class="cart__by">by:<span class="cart__author"> Aaron</span></div>
             <div class="cart__category">FoodieGo BCtravel</div>
             <div class="cart__title">{{ $blog->title }}</div>
-            <div class="cart__text">{{Illuminate\Support\Str::limit($blog->text, $limit = 250 , $end ='...') }}
+            <div class="cart__text_artical">{{Illuminate\Support\Str::limit($blog->text, $limit = 250 , $end ='...') }}
             </div>
             <div class="blog__button">
                 <a href="{{route('artical.show',$blog->id)}}">read more </a>

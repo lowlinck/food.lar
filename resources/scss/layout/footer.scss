@@ -61,7 +61,7 @@
 
     // .footer__text
 
-    &__text {
+    &__text_footer {
         width: 280px;
         height: 126px;
         margin-left: 130px;
@@ -132,8 +132,7 @@
     border-radius: 48px;
     display: flex;
     justify-content: space-evenly;
-    ;
-
+    
 }
 
 .input__group_text::placeholder {
@@ -225,7 +224,7 @@
 
 		// .footer__text
 
-		&__text {
+		&__text_footer {
             position: absolute;
             width: 90%;
             left: -100px;
@@ -299,6 +298,7 @@
     left: 390px;
     display: flex;
     width:360px ;
+    border-radius: 20px;
     
 
 }
@@ -391,7 +391,7 @@
 
 		// .footer__text
 
-		&__text {
+		&__text_footer {
             position: absolute;
             width: 90%;
             left: -100px;

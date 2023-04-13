@@ -60,7 +60,7 @@
 
     <div class="footer__subscribe">
       <div class="input__group">
-        <div class="footer__text">Foodie GoLicious Eu dictum vestibulum
+        <div class="footer__text_footer">Foodie GoLicious Eu dictum vestibulum
           a non auctor faucibus praesent duis. At nam vehicula eu viverra eget.
            Est viverra elit libero pretium euismod integer.
             Morbi netus diam velit lorem porta fermentum tortor.

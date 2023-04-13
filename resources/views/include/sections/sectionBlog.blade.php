@@ -14,12 +14,12 @@
         </div>
      
         <div class="blog__right">
-            <div class="blog__title">{{$blog->title}}</div>
-            <div class="blog__text">{{$blog->text}}
+            <div class="blog__title_main">{{$blog->title}}</div>
+            <div class="blog__text_main">{{$blog->text}}
             </div>
-            <div class="blog__button">
-                <a href="#">read more </a>
-                    <img src="images/icon/rightVector.svg" alt="" >
+            <div class="blog__button_main">
+                <a href="{{route('artical.show',$blog->id)}}">read more </a>
+                    <img src="{{asset('images/icon/rightVector.svg')}}" alt="" >
                
             </div>
         </div>
