@@ -4,7 +4,8 @@
     </div>
    <div class="button__group">
     @foreach( $searches as $search)
-    <button class="button">{{$search->name}}</button>
+    <button class="button__search">{{$search->name}}</button>
+    
 
     @endforeach
    </div>
