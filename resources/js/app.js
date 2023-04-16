@@ -1,7 +1,8 @@
 import './bootstrap';
-import'./burger';
+import {menuInit } from './burger';
 import'./swiper';
 import'./magnific-popup';
 import'./resize';
 
+menuInit()
 
