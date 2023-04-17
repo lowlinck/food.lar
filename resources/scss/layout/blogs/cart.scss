@@ -16,20 +16,30 @@
         display: flex;
         justify-content: center;
         gap: 10px;
-        width: 600px;
+        width: vw(1180);
+        max-width: 1180px;
         margin: 23px auto 0 auto;
-
+        @include media(1440){
+            width: 699px;
+            height: 212px;
+        }
 
     }
 
     // .cart__image
 
-    &__image {}
+    &__image {
+        @include media(1440){
+            width:212px;
+            height: 212px;
+        }
+    }
 
     // .cart__content
 
     &__content {
-        width: 904px;
+        max-width: 904px;
+        width: vw(904);
         background-color: #F4F3EE;
         border-top-right-radius: 40px;
         border-bottom-right-radius: 40px;
@@ -117,7 +127,7 @@
     // .blog__button
 
     &__button {
-        margin: 5px 50px 0 600px;
+        margin: 5px 50px 0 clamp(200px,vw(500), 600px);
         display: flex;
         justify-content: space-around;
         border: 1px solid #000000;
@@ -132,3 +142,4 @@
 
     }
 }
+

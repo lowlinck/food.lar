@@ -1,5 +1,9 @@
 .menu {
+    max-width: 875px;
     margin: 0 auto;
+    overflow: hidden;
+
+
 
 }
 
@@ -11,10 +15,10 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #231C1A;   
+    color: #231C1A;
     border-bottom: 1px solid rgba(35, 28, 26, 0.5);
     padding-bottom: 5px;
-   
+
 }
 .small__border{
     opacity: 0.5;
@@ -24,7 +28,7 @@
 .small__border:focus,
 .small__border:active
 {
-    
+
     opacity: 1;
     border-bottom: 4px solid rgba(236, 176, 47, 1);;
     padding-bottom: 5px;

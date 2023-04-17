@@ -122,9 +122,14 @@ class BlogController extends Controller
 
     public function resizes(Request $request){
 
+        // $screenWidth = $request->input('screenWidth');
+        // session(['screenWidth' => $screenWidth]);
+
         $screenWidth = $request->input('screenWidth');
+        // здесь вы можете использовать $screenWidth для выполнения необходимых операций
         session(['screenWidth' => $screenWidth]);
 
+        return response()->json(['success' => true]);
     }
 
 }
